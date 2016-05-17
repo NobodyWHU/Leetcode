@@ -1,0 +1,1 @@
+纯数学思想，因素要尽可能使用3，具体分析见[链接](https://leetcode.com/discuss/102706/an-simple-explanation-of-the-math-part-and-a-o-n-solution)
