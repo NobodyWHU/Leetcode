@@ -1,0 +1,1 @@
+The second solution is to use binary search to search the duplicate considering pigeon hole rule which is quite direct in this case. [1, n] inclusive in the array whose index ranges from [0, n] inclusive, so counting the number less than or equal to the middle can accelerate the searching process.
