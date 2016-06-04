@@ -1,0 +1,7 @@
+维护两个stack，一个记录入队instack，一个记录出队outstack
+
+每次push的时候，入队的stack append
+
+每次peek的时候，先检查outstack是不是为空，如果为空则将instack放入outstack，否则直接返回outstack的最后一个
+
+每次pop的时候先调用peek，保证outstack总是有值的
