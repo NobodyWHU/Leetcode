@@ -4,24 +4,14 @@ class Solution(object):
         :type n: int
         :rtype: int
         """
-        if n <= 2:
-            return 0
-        c = 1
-        primeFlag = [False] * (n+1)
-        
-        i = 3
-        while i*i <= n:
-            if primeFlag[i]:
-                continue
-            j = i**2
-            while j <= n:
-                primeFlag[j] = True
-                j += i
-            i = i + 2
-        
-        for i in range(3, n, 2):
-            if not primeFlag[i]:
-                c += 1
-        
-        
-        return c
+        isPrime = [True] * max(n, 2)
+        isPrime[0], isPrime[1] = False, False
+        x = 2
+        while x * x < n:
+            if isPrime[x]:
+                p = x * x
+                while p < n:
+                    isPrime[p] = False
+                    p += x
+            x += 1
+        return sum(isPrime)
