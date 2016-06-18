@@ -16,7 +16,7 @@ class Solution(object):
             j = i**2
             while j <= n:
                 primeFlag[j] = True
-                j += 2*i
+                j += i
             i = i + 2
         
         for i in range(3, n, 2):
