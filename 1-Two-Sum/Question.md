@@ -31,9 +31,9 @@ The return format had been changed to **zero-based** indices. Please read the ab
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Array](/tag/array/) [Hash Table](/tag/hash-table/)</span></div>
+<span class="hidebutton">[Array](/tag/array/) [Hash Table](/tag/hash-table/)</span></div>
 
 <div>
 
