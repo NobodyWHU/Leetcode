@@ -10,8 +10,8 @@ class Solution(object):
         return ans
     
     def helper(self, n, k, start, temp_list, ans):
-        if len(temp_list) == k:
+        if 0 == k:
             ans.append(temp_list)
             return
-        for i in range(start, n+1):
-            self.helper(n, k, i+1, temp_list+[i], ans)
+        for i in range(start, n-k+2):
+            self.helper(n, k-1, i+1, temp_list+[i], ans)
