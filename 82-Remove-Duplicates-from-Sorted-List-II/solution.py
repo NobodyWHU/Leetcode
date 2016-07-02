@@ -15,18 +15,21 @@ class Solution(object):
         dummy = ListNode(-1)
         dummy.next = head
         temp = set()
+        duplicate = set()
         p, q = dummy.next, dummy
         while p:
             if p.val in temp:
+                duplicate.add(p.val)
                 q.next = p.next
                 p = p.next
+                
             else:
                 temp.add(p.val)
                 p = p.next
                 q = q.next
         j, k = dummy, dummy.next
         while k:
-            if k.val in temp:
+            if k.val in duplicate:
                 j.next = k.next
             else:
                 j = j.next
