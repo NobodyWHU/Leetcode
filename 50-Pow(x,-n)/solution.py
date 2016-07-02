@@ -11,8 +11,10 @@ class Solution(object):
         flag = n > 0
         n = abs(n)
         while n:
-            ans *= x
-            n -= 1
+            if n & 1 == 1:
+                ans *= x
+            x *= x
+            n >>= 1
         if flag:
             return ans
         else:
