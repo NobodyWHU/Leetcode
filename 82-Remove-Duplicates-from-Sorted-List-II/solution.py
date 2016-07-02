@@ -31,6 +31,7 @@ class Solution(object):
         while k:
             if k.val in duplicate:
                 j.next = k.next
+                k = k.next
             else:
                 j = j.next
                 k = k.next
