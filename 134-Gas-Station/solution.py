@@ -5,18 +5,12 @@ class Solution(object):
         :type cost: List[int]
         :rtype: int
         """
-        n = len(cost)
+        if sum(gas) < sum(cost): return -1
+        n = len(gas)
+        diff = 0
+        stationIndex = 0
         for i in range(n):
-            flag = True
-            mygas = 0
-            for j in range(n):
-                mygas = mygas + gas[(i+j)%n] - cost[(i+j)%n]
-                if mygas < 0:
-                    i = i + j
-                    flag = False
-                    break
-            if flag:
-                return i
-        return -1
-            
+            if gas[i]+diff < cost[i]: stationIndex = i+1; diff = 0
+            else: diff += gas[i]-cost[i]
+        return stationIndex
         
