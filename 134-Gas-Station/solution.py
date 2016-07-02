@@ -5,21 +5,18 @@ class Solution(object):
         :type cost: List[int]
         :rtype: int
         """
-        self.cost = cost
-        self.gas = gas
         n = len(cost)
         for i in range(n):
-            if self.helper(i):
+            flag = True
+            mygas = 0
+            for j in range(n):
+                mygas = mygas + gas[(i+j)%n] - cost[(i+j)%n]
+                if mygas < 0:
+                    i = i + j
+                    flag = False
+                    break
+            if flag:
                 return i
         return -1
+            
         
-        
-    def helper(self, start):
-        new_gas = self.gas[start:]+self.gas[:start]
-        new_cost = self.cost[start:]+self.cost[:start]
-        left = 0
-        for i in range(len(self.cost)):
-            if left + new_gas[i] < new_cost[i]:
-                return False
-            left += new_gas[i] - new_cost[i]
-        return True
