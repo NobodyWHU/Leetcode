@@ -13,6 +13,7 @@ class Solution(object):
             temp.add(s[i])
             for j in range(i+1, n):
                 if s[j] in temp:
+                    i = i+j
                     break
                 else:
                     temp.add(s[j])
