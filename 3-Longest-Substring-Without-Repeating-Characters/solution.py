@@ -8,14 +8,14 @@ class Solution(object):
             return 0
         n = len(s)
         ans = -1
+        start = 0
+        used_dict = {}
         for i in range(n):
-            temp = set()
-            temp.add(s[i])
-            for j in range(i+1, n):
-                if s[j] in temp:
-                    i = i+j
-                    break
-                else:
-                    temp.add(s[j])
-            ans = max(len(temp), ans)
+            if s[i] in used_dict and start <= used_dict[s[i]]:
+                start = used_dict[s[i]] + 1
+            else:
+                ans = max(ans, i-start+1)
+            
+            used_dict[s[i]] = i
+        
         return ans
