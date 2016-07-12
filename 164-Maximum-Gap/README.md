@@ -1,0 +1,1 @@
+http://bookshadow.com/weblog/2014/12/14/leetcode-maximum-gap/
