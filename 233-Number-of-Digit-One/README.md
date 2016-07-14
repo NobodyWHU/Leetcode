@@ -1,0 +1,1 @@
+http://bookshadow.com/weblog/2015/07/08/leetcode-number-digit-one/
