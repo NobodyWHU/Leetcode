@@ -1,0 +1,1 @@
+https://discuss.leetcode.com/topic/51356/two-python-solutions
