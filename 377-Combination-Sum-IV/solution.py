@@ -5,15 +5,17 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        ans = []
-        self.helper(nums, target, [], ans)
-        return len(ans)
-        
-    def helper(self, nums, leftvalue, templist, ans):
-        if leftvalue == 0:
-            ans.append(templist)
-            return
-        if leftvalue < 0:
-            return
-        for i in nums:
-            self.helper(nums, leftvalue-i, templist+[i], ans)
+        if not nums:
+            return 0
+        start = min(nums)
+        if start > target:
+            return 0
+        # record number of combinations for i
+        dp = [1] + [0] * target
+        for i in range(len(dp)):
+            # skip numbers that have no combinations
+            if dp[i] != 0:
+                for n in nums:
+                    if i + n < len(dp):
+                        dp[i + n] += dp[i]
+        return dp[-1]
