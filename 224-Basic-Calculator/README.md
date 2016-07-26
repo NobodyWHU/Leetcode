@@ -1,0 +1,1 @@
+https://discuss.leetcode.com/topic/15806/easy-18-lines-c-16-lines-python/2
