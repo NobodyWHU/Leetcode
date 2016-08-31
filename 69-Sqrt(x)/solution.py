@@ -5,7 +5,7 @@ class Solution(object):
         :rtype: int
         """
         start, end = 1, x
-        while start  < end:
+        while start+1 < end:
             mid = (start + end) / 2
             if mid * mid == x:
                 return mid
