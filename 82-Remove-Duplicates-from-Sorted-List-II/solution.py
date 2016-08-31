@@ -20,13 +20,13 @@ class Solution(object):
         while p:
             if p.val in temp:
                 duplicate.add(p.val)
-                q.next = p.next
+                #q.next = p.next
                 p = p.next
                 
             else:
                 temp.add(p.val)
                 p = p.next
-                q = q.next
+                #q = q.next
         j, k = dummy, dummy.next
         while k:
             if k.val in duplicate:
