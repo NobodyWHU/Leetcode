@@ -5,13 +5,13 @@ class Solution(object):
         :type nums: List[int]
         :rtype: int
         """
-        n = len(nums)
-        if n == 0:
-            return 0
         left = right = total = 0
-        ans = n + 1
+        n = len(nums)
+        if n==0:
+            return 0
+        ans = n+1
         while right < n:
-            while right < n and total < s:
+            while right<n and total < s:
                 total += nums[right]
                 right += 1
             if total < s:
@@ -24,4 +24,3 @@ class Solution(object):
             return 0
         else:
             return ans
-        
