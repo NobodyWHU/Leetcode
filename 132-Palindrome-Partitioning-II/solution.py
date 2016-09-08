@@ -4,20 +4,13 @@ class Solution(object):
         :type s: str
         :rtype: int
         """
-        ans = []
-        self.dfs(s, [], ans)
-        if not ans:
-            return 0
-        else:
-            return min(len(v) for v in ans) - 1
-    
-    def dfs(self, s, temp, ans):
-        if len(s) == 0:
-            ans.append(temp)
-            return
-        for i in range(1, len(s)+1):
-            if self.is_palindrome(s[:i]):
-                self.dfs(s[i:], temp+[s[:i]], ans)
-    
-    def is_palindrome(self, s):
-        return s == s[::-1]
+        l = len(s)
+        # 以第i个字符开头到最后一个字符，一共有dp[i]个回文串
+        dp = [l-i for i in range(l+1)]
+        status = [[False]*l for _ in range(l)]
+        for i in range(l-2, -1, -1):
+            for j in range(i, l):
+                if s[i] == s[j] and ((j - i) < 2 or status[i+1][j-1]):
+                    status[i][j] = True
+                    dp[i] = min(dp[j+1]+1, dp[i])
+        return dp[0]-1
