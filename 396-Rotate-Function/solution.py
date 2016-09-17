@@ -7,14 +7,12 @@ class Solution(object):
         n = len(A)
         if n == 0:
             return 0
-        ans = []
+        sumv = 0
         for i in range(n):
-            temp = A[n-i:]+A[:n-i]
-            v = 0
-            p = 0
-            for t in temp:
-                v += p*t
-                p += 1
-            ans.append(v)
-        return max(ans)
-        
+            sumv += i * A[i]
+        sumt = sum(A)
+        ans = sumv
+        for num in A:
+            sumv += n*num-sumt
+            ans = max(ans, sumv)
+        return ans
