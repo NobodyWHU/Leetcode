@@ -21,12 +21,12 @@ the contiguous subarray `[2,3]` has the largest product = `6`.
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Array](/tag/array/) [Dynamic Programming](/tag/dynamic-programming/)</span></div>
+<span class="hidebutton">[Array](/tag/array/) [Dynamic Programming](/tag/dynamic-programming/)</span></div>
 
 <div>
 
-<div id="similar" class="btn btn-xs btn-warning">Hide Similar Problems</div>
+<div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
 
-<span class="hidebutton" style="display: inline;">[(M) Maximum Subarray](/problems/maximum-subarray/) [(E) House Robber](/problems/house-robber/) [(M) Product of Array Except Self](/problems/product-of-array-except-self/)</span></div>
+<span class="hidebutton">[(M) Maximum Subarray](/problems/maximum-subarray/) [(E) House Robber](/problems/house-robber/) [(M) Product of Array Except Self](/problems/product-of-array-except-self/)</span></div>
