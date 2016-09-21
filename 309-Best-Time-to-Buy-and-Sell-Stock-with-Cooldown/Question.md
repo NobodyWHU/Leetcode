@@ -27,12 +27,18 @@ Special thanks to [@dietpepsi](https://leetcode.com/discuss/user/dietpepsi) for 
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="company_tags" class="btn btn-xs btn-warning">Show Company Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Dynamic Programming](/tag/dynamic-programming/)</span></div>
+<span class="hidebutton">[Google](/company/google/)</span></div>
 
 <div>
 
-<div id="similar" class="btn btn-xs btn-warning">Hide Similar Problems</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[(E) Best Time to Buy and Sell Stock](/problems/best-time-to-buy-and-sell-stock/) [(M) Best Time to Buy and Sell Stock II](/problems/best-time-to-buy-and-sell-stock-ii/)</span></div>
+<span class="hidebutton">[Dynamic Programming](/tag/dynamic-programming/)</span></div>
+
+<div>
+
+<div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
+
+<span class="hidebutton">[(E) Best Time to Buy and Sell Stock](/problems/best-time-to-buy-and-sell-stock/) [(M) Best Time to Buy and Sell Stock II](/problems/best-time-to-buy-and-sell-stock-ii/)</span></div>
