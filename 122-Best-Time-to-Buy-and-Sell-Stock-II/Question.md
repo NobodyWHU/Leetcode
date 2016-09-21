@@ -14,18 +14,12 @@ Design an algorithm to find the maximum profit. You may complete as many transac
 
 <div>
 
-<div id="company_tags" class="btn btn-xs btn-warning">Hide Company Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Bloomberg](/company/bloomberg/)</span></div>
-
-<div>
-
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
-
-<span class="hidebutton" style="display: inline;">[Array](/tag/array/) [Greedy](/tag/greedy/)</span></div>
+<span class="hidebutton">[Array](/tag/array/) [Greedy](/tag/greedy/)</span></div>
 
 <div>
 
-<div id="similar" class="btn btn-xs btn-warning">Hide Similar Problems</div>
+<div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
 
-<span class="hidebutton" style="display: inline;">[(E) Best Time to Buy and Sell Stock](/problems/best-time-to-buy-and-sell-stock/) [(H) Best Time to Buy and Sell Stock III](/problems/best-time-to-buy-and-sell-stock-iii/) [(H) Best Time to Buy and Sell Stock IV](/problems/best-time-to-buy-and-sell-stock-iv/) [(M) Best Time to Buy and Sell Stock with Cooldown](/problems/best-time-to-buy-and-sell-stock-with-cooldown/)</span></div>
+<span class="hidebutton">[(E) Best Time to Buy and Sell Stock](/problems/best-time-to-buy-and-sell-stock/) [(H) Best Time to Buy and Sell Stock III](/problems/best-time-to-buy-and-sell-stock-iii/) [(H) Best Time to Buy and Sell Stock IV](/problems/best-time-to-buy-and-sell-stock-iv/) [(M) Best Time to Buy and Sell Stock with Cooldown](/problems/best-time-to-buy-and-sell-stock-with-cooldown/)</span></div>
