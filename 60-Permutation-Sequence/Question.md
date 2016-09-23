@@ -38,6 +38,6 @@ Given _n_ and _k_, return the _k_<sup>th</sup> permutation sequence.
 
 <div>
 
-<div id="similar" class="btn btn-xs btn-warning">Hide Similar Problems</div>
+<div id="similar" class="btn btn-xs btn-warning">Show Similar Problems</div>
 
-<span class="hidebutton" style="display: inline;">[(M) Next Permutation](/problems/next-permutation/) [(M) Permutations](/problems/permutations/)</span></div>
+<span class="hidebutton">[(M) Next Permutation](/problems/next-permutation/) [(M) Permutations](/problems/permutations/)</span></div>
