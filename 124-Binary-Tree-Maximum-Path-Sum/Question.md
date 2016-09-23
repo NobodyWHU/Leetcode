@@ -30,9 +30,9 @@ Return `6`.
 
 <div>
 
-<div id="tags" class="btn btn-xs btn-warning">Hide Tags</div>
+<div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
 
-<span class="hidebutton" style="display: inline;">[Tree](/tag/tree/) [Depth-first Search](/tag/depth-first-search/)</span></div>
+<span class="hidebutton">[Tree](/tag/tree/) [Depth-first Search](/tag/depth-first-search/)</span></div>
 
 <div>
 
